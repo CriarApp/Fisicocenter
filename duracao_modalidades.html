@@ -13,32 +13,98 @@
     <script type="text/javascript" src="wpscripts/jquery.wpslider.js"></script>
     <script type="text/javascript">
       $(document).ready(function() {
+      $('#slider_64').data('wpslider', new $.fn.wpslider( { g_nDivId:'#slider_64', g_nTransitStyle:3, g_nLoopTime:2000, g_nAnimationTime:500, g_bPlayAtStart:true, g_strEasing: "linear" } ) );
+      var btnState = [];
+      $('#slider_63').data('wpslider', new $.fn.wpslider( { g_nDivId:'#slider_63', g_nTransitStyle:3, g_nLoopTime:2000, g_nAnimationTime:500, g_bPlayAtStart:true, g_strEasing: "linear" } ) );
+      var btnState = [];
+      $('#slider_62').data('wpslider', new $.fn.wpslider( { g_nDivId:'#slider_62', g_nTransitStyle:3, g_nLoopTime:2000, g_nAnimationTime:500, g_bPlayAtStart:true, g_strEasing: "linear" } ) );
+      var btnState = [];
       $('#slider_61').data('wpslider', new $.fn.wpslider( { g_nDivId:'#slider_61', g_nTransitStyle:3, g_nLoopTime:2000, g_nAnimationTime:500, g_bPlayAtStart:true, g_strEasing: "linear" } ) );
       var btnState = [];
+      $('#slider_64').data('wpslider').restrictSlides();
+      $('#slider_63').data('wpslider').restrictSlides();
+      $('#slider_62').data('wpslider').restrictSlides();
       $('#slider_61').data('wpslider').restrictSlides();
       });
     </script>
   </head>
-  <body style="height:1920px;background:#000000;">
-    <div id="divMain" style="background:transparent;margin-left:auto;margin-right:auto;position:relative;width:1080px;height:1920px;">
+  <body style="height:5560px;background:#000000;">
+    <div id="divMain" style="background:transparent;margin-left:auto;margin-right:auto;position:relative;width:1080px;height:5560px;">
+      <img alt="" src="wpimages/wpa4dd5b1f_06.png" style="position:absolute;left:0px;top:0px;width:1080px;height:1920px;">
       <map id="map1" name="map1">
-        <area shape="poly" coords="568,1783,563,1783,563,1776,564,1774,570,1774" href="carregando_home.html" alt="">
-        <area shape="poly" coords="535,1783,535,1779,536,1777,536,1767,532,1767,530,1770,526,1767,524,1772,523,1774,524,1775,523,1776,522,1772,520,1768,519,1767,514,1767,514,1770,513,1773,512,1777,512,1789,517,1788,517,1783,519,1780,521,1785,522,1789,527,1789,529,1780,529,1774,530,1771,530,1780,529,1785,529,1789,534,1789" href="carregando_home.html" alt="">
-        <area shape="poly" coords="572,1788,574,1783,575,1778,575,1773,576,1770,574,1767,561,1767,558,1771,557,1775,558,1776,557,1781,557,1787,559,1789,571,1789" href="carregando_home.html" alt="">
-        <area shape="poly" coords="556,1788,556,1779,557,1777,557,1773,558,1771,558,1767,553,1767,552,1771,552,1774,551,1777,551,1784,550,1787,551,1789,556,1789" href="carregando_home.html" alt="">
-        <area shape="poly" coords="549,1788,550,1784,550,1783,542,1783,542,1778,543,1774,549,1774,552,1771,551,1767,540,1767,538,1771,537,1775,537,1779,536,1783,537,1787,538,1789,549,1789" href="carregando_home.html" alt="">
-        <area shape="poly" coords="508,1789,510,1788,510,1784,511,1782,511,1776,512,1774,512,1767,507,1767,507,1773,505,1783,505,1790" href="carregando_home.html" alt="">
-        <area shape="poly" coords="536,1764,538,1762,539,1760,538,1758,538,1757,536,1758,534,1758,532,1762,531,1764,531,1765,536,1765" href="carregando_home.html" alt="">
-        <area shape="poly" coords="524,1748,533,1745,534,1736,533,1734,534,1729,546,1729,547,1737,547,1748,570,1748,570,1720,563,1714,555,1708,548,1702,541,1696,533,1701,526,1707,519,1713,511,1719,510,1726,510,1747,513,1749,522,1749" href="carregando_home.html" alt="">
-        <area shape="poly" coords="579,1720,582,1715,575,1708,570,1699,570,1683,560,1682,557,1692,555,1693,548,1686,542,1682,533,1686,526,1692,518,1698,511,1705,503,1711,498,1717,505,1721,513,1715,520,1708,528,1702,535,1695,541,1692,548,1699,556,1705,564,1711,571,1717,579,1721" href="carregando_home.html" alt="">
+        <area shape="poly" coords="29,106,30,102,31,99,31,92,32,87,29,84,27,85,25,87,25,92,24,89,22,86,21,85,16,85,15,90,15,93,14,97,14,107,19,107,19,104,20,100,20,97,22,101,23,105,24,107,29,107" href="carregando_home.html" alt="">
+        <area shape="poly" coords="75,106,76,103,77,98,77,86,71,84,67,85,63,85,60,88,60,84,55,85,55,89,53,98,52,103,52,101,44,101,45,95,45,92,52,92,54,86,49,84,46,85,42,86,39,89,39,97,38,102,40,107,51,107,52,104,52,107,58,107,58,99,59,95,59,105,60,107,73,107" href="carregando_home.html" alt="">
+        <area shape="poly" coords="70,101,64,101,65,98,65,96,66,94,66,92,68,91,70,92,72,92,71,96,71,99" href="carregando_home.html" alt="">
+        <area shape="poly" coords="59,93,59,89,60,88,60,90" href="carregando_home.html" alt="">
+        <area shape="poly" coords="36,105,37,103,37,98,38,93,38,84,36,85,34,85,33,86,32,89,32,98,31,101,31,106,32,107,36,107" href="carregando_home.html" alt="">
+        <area shape="poly" coords="12,101,14,88,14,85,13,84,12,85,9,85,9,86,8,91,8,94,7,98,7,107,12,107" href="carregando_home.html" alt="">
+        <area shape="poly" coords="37,83,38,83,40,80,41,78,42,75,38,76,36,76,34,80,32,83,34,84" href="carregando_home.html" alt="">
+        <area shape="poly" coords="29,66,36,59,35,53,36,47,47,47,49,55,49,66,72,66,72,38,64,30,56,24,48,18,40,14,33,20,26,27,19,33,12,40,12,66,15,67,27,67" href="carregando_home.html" alt="">
+        <area shape="poly" coords="84,36,79,28,72,23,72,2,71,0,60,0,59,10,58,11,51,4,44,0,35,4,29,10,21,16,13,22,5,28,0,35,4,40,10,37,17,31,24,25,31,19,38,13,43,9,52,18,59,24,67,29,74,36,80,41" href="carregando_home.html" alt="">
       </map>
-      <img src="wpimages/wp00498e27_06.png" alt="" width="1080" height="1920" usemap="#map1" style="position:absolute;left:0px;top:0px;width:1080px;height:1920px;">
-      <div id="slider_61" style="position:absolute;left:340px;top:85px;width:400px;height:400px;overflow:hidden;">
-        <div id="slider_61_P1" style="position:absolute;left:0px;right:0px;width:400px;height:400px;">
-          <img alt="" src="wpimages/wpc695e513_05_06.jpg" style="position:absolute;left:0px;top:0px;width:400px;height:400px;">
+      <img alt="Carregando home" usemap="#map1" src="wpimages/wp6f0f228c_06.png" onscroll="1" style="position:absolute;left:498px;top:5297px;width:84px;height:107px;">
+      <div style="position:absolute;left:90px;top:4734px;width:900px;height:395px;overflow:hidden;">
+        <p class="Body"><span class="C-1">Treino e aulas da arte marcial emagrecem, ajudam a ganhar massa e rigidez muscular, espantam o estresse e trabalham autocontrole. </span></p>
+        <p class="Body"><span class="C-1">Arte marcial tailandesa milenar, o muay thai tem aulas e treinamentos voltados não só para o público masculino, mas também para o feminino, e sua procura só cresce nas academias brasileiras. Não é para menos: o boxe tailandês oferece inúmeros benefícios para corpo e mente.</span></p>
+      </div>
+      <img alt="Duração 60/90 min" src="wpimages/wpd6da101c_06.png" style="position:absolute;left:294px;top:4639px;width:94px;height:44px;">
+      <img alt="" src="wpimages/wp3deb5af7_06.png" style="position:absolute;left:311px;top:4572px;width:60px;height:60px;">
+      <img alt="" src="wpimages/wpba480113_06.png" style="position:absolute;left:437px;top:4575px;width:3px;height:50px;">
+      <img alt="Objetivo Condicionamento" src="wpimages/wpc5476db8_06.png" style="position:absolute;left:461px;top:4640px;width:159px;height:44px;">
+      <img alt="" src="wpimages/wpfeec6521_06.png" style="position:absolute;left:510px;top:4573px;width:60px;height:60px;">
+      <img alt="" src="wpimages/wpba480113_06.png" style="position:absolute;left:639px;top:4575px;width:3px;height:50px;">
+      <img alt="Intensidade Alta" src="wpimages/wp03803347_06.png" style="position:absolute;left:686px;top:4641px;width:108px;height:44px;">
+      <img alt="" src="wpimages/wpfeec6521_06.png" style="position:absolute;left:710px;top:4573px;width:60px;height:60px;">
+      <img alt="" src="wpimages/wp08f585d8_06.png" style="position:absolute;left:340px;top:4520px;width:400px;height:5px;">
+      <img alt="Muaythai" src="wpimages/wp5458e969_06.png" style="position:absolute;left:316px;top:4390px;width:458px;height:104px;">
+      <div id="slider_64" style="position:absolute;left:340px;top:3969px;width:400px;height:400px;overflow:hidden;">
+        <div id="slider_64_P1" style="position:absolute;left:0px;right:0px;width:400px;height:400px;">
+          <img alt="" src="wpimages/wpc5e8a88e_05_06.jpg" style="position:absolute;left:0px;top:0px;width:400px;height:400px;">
         </div>
-        <div id="slider_61_P2" style="position:absolute;left:0px;right:0px;width:400px;height:400px;visibility:hidden;display:none;">
-          <img alt="" src="wpimages/wpb9ee317b_05_06.jpg" style="position:absolute;left:0px;top:0px;width:400px;height:400px;">
+        <div id="slider_64_P2" style="position:absolute;left:0px;right:0px;width:400px;height:400px;visibility:hidden;display:none;">
+          <img alt="" src="wpimages/wp223d73a4_05_06.jpg" style="position:absolute;left:0px;top:0px;width:400px;height:400px;">
+        </div>
+      </div>
+      <div style="position:absolute;left:90px;top:3534px;width:900px;height:353px;overflow:hidden;">
+        <p class="Body"><span class="C-1">As aulas de jump e step podem trazer vários benefícios para a saúde, como: Tonifica os músculos inferiores; Fortalece os músculos; Tonifica o abdômen; Melhora o condicionamento; Melhoram a autoestima. Se você está começando a se exercitar agora, pode encontrar uma grande aliada: a aula de step e jump é divertida e envolvente com vários ritmos musicais.</span></p>
+      </div>
+      <img alt="Duração 45/60 min" src="wpimages/wpf1147e48_06.png" style="position:absolute;left:294px;top:3439px;width:94px;height:44px;">
+      <img alt="" src="wpimages/wp3deb5af7_06.png" style="position:absolute;left:311px;top:3373px;width:60px;height:60px;">
+      <img alt="" src="wpimages/wpba480113_06.png" style="position:absolute;left:437px;top:3376px;width:3px;height:50px;">
+      <img alt="Objetivo Condicionamento" src="wpimages/wpc5476db8_06.png" style="position:absolute;left:461px;top:3440px;width:159px;height:44px;">
+      <img alt="" src="wpimages/wpfeec6521_06.png" style="position:absolute;left:510px;top:3373px;width:60px;height:60px;">
+      <img alt="" src="wpimages/wpba480113_06.png" style="position:absolute;left:639px;top:3375px;width:3px;height:50px;">
+      <img alt="Intensidade Alta" src="wpimages/wp03803347_06.png" style="position:absolute;left:686px;top:3441px;width:108px;height:44px;">
+      <img alt="" src="wpimages/wpfeec6521_06.png" style="position:absolute;left:710px;top:3374px;width:60px;height:60px;">
+      <img alt="" src="wpimages/wp08f585d8_06.png" style="position:absolute;left:340px;top:3320px;width:400px;height:5px;">
+      <img alt="Jump &amp; Step" src="wpimages/wpb8f14d17_06.png" style="position:absolute;left:235px;top:3190px;width:617px;height:104px;">
+      <div id="slider_63" style="position:absolute;left:340px;top:2769px;width:400px;height:400px;overflow:hidden;">
+        <div id="slider_63_P1" style="position:absolute;left:0px;right:0px;width:400px;height:400px;">
+          <img alt="" src="wpimages/wpf9c1c72d_05_06.jpg" style="position:absolute;left:0px;top:0px;width:400px;height:400px;">
+        </div>
+        <div id="slider_63_P2" style="position:absolute;left:0px;right:0px;width:400px;height:400px;visibility:hidden;display:none;">
+          <img alt="" src="wpimages/wp06eefd1f_05_06.jpg" style="position:absolute;left:0px;top:0px;width:400px;height:400px;">
+        </div>
+      </div>
+      <div style="position:absolute;left:90px;top:2069px;width:900px;height:613px;overflow:hidden;">
+        <p class="Body"><span class="C-1">É difícil escolher um motivo só. Esse treino traz benefícios para a saúde física – como perda de 350 calorias por aula, melhora a sua postura e pode ser feito por alunos Iniciantes, intermediários e avançados. Para a mente, também faz bem, aliviando o estresse e aumentando a autoestima e possibilitando a interação com pessoas que compartilham objetivos parecidos. Se você está começando a se exercitar agora, pode encontrar uma grande aliada: a aula de dança é divertida e envolvente. Assim, fica fácil para iniciantes manterem um plano regular de atividades. E se você for do grupo dos que já batem carteirinha na academia, pode aproveitar a aula de dança para diversificar a rotina de treinos.</span></p>
+      </div>
+      <img alt="Duração 45/60 min" src="wpimages/wpf1147e48_06.png" style="position:absolute;left:294px;top:1975px;width:94px;height:44px;">
+      <img alt="" src="wpimages/wp3deb5af7_06.png" style="position:absolute;left:311px;top:1908px;width:60px;height:60px;">
+      <img alt="" src="wpimages/wpba480113_06.png" style="position:absolute;left:437px;top:1911px;width:3px;height:50px;">
+      <img alt="Objetivo Condicionamento" src="wpimages/wpc5476db8_06.png" style="position:absolute;left:461px;top:1976px;width:159px;height:44px;">
+      <img alt="" src="wpimages/wpfeec6521_06.png" style="position:absolute;left:510px;top:1908px;width:60px;height:60px;">
+      <img alt="" src="wpimages/wpba480113_06.png" style="position:absolute;left:639px;top:1911px;width:3px;height:50px;">
+      <img alt="Intensidade Alta" src="wpimages/wp03803347_06.png" style="position:absolute;left:686px;top:1976px;width:108px;height:44px;">
+      <img alt="" src="wpimages/wpfeec6521_06.png" style="position:absolute;left:710px;top:1909px;width:60px;height:60px;">
+      <img alt="" src="wpimages/wp08f585d8_06.png" style="position:absolute;left:340px;top:1855px;width:400px;height:5px;">
+      <img alt="Dança" src="wpimages/wp6d9b829a_06.png" style="position:absolute;left:394px;top:1725px;width:303px;height:104px;">
+      <div id="slider_62" style="position:absolute;left:340px;top:1305px;width:400px;height:400px;overflow:hidden;">
+        <div id="slider_62_P1" style="position:absolute;left:0px;right:0px;width:400px;height:400px;">
+          <img alt="" src="wpimages/wp9161233b_05_06.jpg" style="position:absolute;left:0px;top:0px;width:400px;height:400px;">
+        </div>
+        <div id="slider_62_P2" style="position:absolute;left:0px;right:0px;width:400px;height:400px;visibility:hidden;display:none;">
+          <img alt="" src="wpimages/wpf5b200d3_05_06.jpg" style="position:absolute;left:0px;top:0px;width:400px;height:400px;">
         </div>
       </div>
       <div style="position:absolute;left:90px;top:849px;width:900px;height:380px;overflow:hidden;">
@@ -54,6 +120,14 @@
       <img alt="" src="wpimages/wpfeec6521_06.png" style="position:absolute;left:710px;top:689px;width:60px;height:60px;">
       <img alt="" src="wpimages/wp08f585d8_06.png" style="position:absolute;left:340px;top:635px;width:400px;height:5px;">
       <img alt="Musculação" src="wpimages/wpfd9e4696_06.png" style="position:absolute;left:243px;top:505px;width:604px;height:104px;">
+      <div id="slider_61" style="position:absolute;left:340px;top:85px;width:400px;height:400px;overflow:hidden;">
+        <div id="slider_61_P1" style="position:absolute;left:0px;right:0px;width:400px;height:400px;">
+          <img alt="" src="wpimages/wpc695e513_05_06.jpg" style="position:absolute;left:0px;top:0px;width:400px;height:400px;">
+        </div>
+        <div id="slider_61_P2" style="position:absolute;left:0px;right:0px;width:400px;height:400px;visibility:hidden;display:none;">
+          <img alt="" src="wpimages/wpb9ee317b_05_06.jpg" style="position:absolute;left:0px;top:0px;width:400px;height:400px;">
+        </div>
+      </div>
     </div>
   </body>
 </html>
